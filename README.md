@@ -1,7 +1,7 @@
 # Meu_Primeiro_Projeto_Copilot_Studio
 Microsoft Copilot Studio
 
-# **  Criando um Agente**
+# **Criando um Agente**
 
 Criar um agente no Copilot Studio envolve algumas etapas fundamentais que permitem personalizar e configurar o comportamento da IA para atender às necessidades específicas de um negócio ou projeto. Aqui está um resumo claro e organizado:
 
