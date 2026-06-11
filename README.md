@@ -104,5 +104,5 @@ Após os testes, o agente pode ser publicado e disponibilizado em diferentes can
 
 
  # 🎯Conclusão: 
- Realizei a criação de um ambiente de desemvolvimento para realizar o projeto proposto, assim não interferia em projetos já construidos no Copilot Studio na empresa que trabalho, usei uma conta corporativa para acesso ao ambiente. Assim conseguir criar um agente e trabalhar nele de forma espontânea e com liberdade. Conclui que para melhor desempenho de qualquer que seja o projeto sempre será necessário uma atualização, tanto de desenvolvimento quanto de script personalizados por mim, com isso será possível uma avaliação positiva dos colaboradores referente ao produto criado.
+ Realizei a criação de um ambiente de desemvolvimento para produzir o projeto proposto, assim não interferia em projetos já construidos no Copilot Studio na empresa que trabalho, usei uma conta corporativa para acesso ao ambiente. Assim conseguir criar um agente e trabalhar nele de forma espontânea e com liberdade. Conclui que para melhor desempenho de qualquer que seja o projeto sempre será necessário uma atualização, tanto de desenvolvimento quanto de script personalizados por mim, com isso será possível uma avaliação positiva dos colaboradores referente ao produto criado.
 
