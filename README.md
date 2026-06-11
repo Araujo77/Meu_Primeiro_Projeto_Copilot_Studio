@@ -8,43 +8,55 @@ Criar um agente no Copilot Studio envolve algumas etapas fundamentais que permit
 
 **📁 1. Objetivo**
 
-Identificar o objetivo principal do agente (ex.: atendimento ao cliente, suporte interno, assistente de vendas). Determinar quais tarefas ou fluxos de conversa ele deve executar.
+Identificar o objetivo principal do agente (ex.: atendimento ao cliente, suporte interno). Determinar quais tarefas ou fluxos de conversa ele deve executar.
 
 ***
 
  **📁 2. Criação do agente**
 
-No Copilot Studio, inicia-se a criação de um novo agente. Escolhe-se um nome e uma descrição que representem sua função. Configura-se a personalidade e o tom de voz do agente (formal, amigável, técnico etc.).
+ :leaves: Clique em Criar Novo Agente.
+
+ :leaves: Dê um nome claro, por exemplo: Suporte ERP Ambiental.
+ 
+ :leaves: Configure a personalidade do agente:
+
+          Tom: profissional, amigável e orientado a soluções.
+
+          Contexto: suporte especializado em ERP para gestão ambiental.
 
 ***
 
- **📁 3.  Criando tópicos**
+ **📁 3.  Configuração dos tópicos**
 
 A criação e configuração de tópicos para um agente de suporte ERP segue uma lógica de conversas guiadas. Cada tópico funciona como uma “rota de atendimento” que organiza o diálogo e ajuda o agente a responder de forma estruturada. 
 Vou detalhar como isso é feito:
 
- **:small_blue_diamond:Problemas de Login**
+ **:zap: Problemas de Login**
 
-Gatilhos: “não consigo entrar”, “senha inválida”, “usuário bloqueado”.
+   Gatilhos: 
+   
+    “não consigo entrar”, “senha inválida”, “usuário bloqueado”.
 
-Fluxo:
+   Fluxo:
+    
+    Saudação: “Você está com dificuldade de acesso, certo?”
+    Pergunta: “Já tentou redefinir sua senha?”
 
-Saudação: “Você está com dificuldade de acesso, certo?”
-
-Pergunta: “Já tentou redefinir sua senha?”
-
-Se sim → instruções de desbloqueio.
+Se sim → instruções de redefinição.
 
 Se não → link para redefinição.
 
 Persistindo → abrir ticket para suporte técnico.
 
-2. Cadastro de Clientes/Fornecedores
-Gatilhos: “cadastrar cliente”, “novo fornecedor”, “alterar dados”.
+**⚡Cadastro de Clientes/Fornecedores**
+
+Gatilhos: 
+
+    “cadastrar cliente”, “novo fornecedor”, “alterar dados”.
 
 Fluxo:
 
-Pergunta: “Deseja incluir ou atualizar um cadastro?”
+    Pergunta: “Deseja incluir ou atualizar um cadastro?”
 
 Se incluir → coletar dados básicos (nome, CNPJ, contato).
 
@@ -52,29 +64,20 @@ Se atualizar → pedir código/ID do cadastro.
 
 Orientar passo a passo ou abrir formulário.
 
-3. Emissão de Nota Fiscal
-Gatilhos: “emitir NF”, “nota fiscal eletrônica”, “erro na nota”.
+
+**⚡ Controle de Estoque**
+
+Gatilhos: 
+
+    “estoque baixo”, “entrada de mercadoria”, “inventário”.
 
 Fluxo:
 
-Pergunta: “A nota é de venda ou de serviço?”
-
-Orientar preenchimento dos campos obrigatórios.
-
-Validar se há integração com SEFAZ.
-
-Se erro persistir → encaminhar para suporte fiscal.
-
-4. Controle de Estoque
-Gatilhos: “estoque baixo”, “entrada de mercadoria”, “inventário”.
-
-Fluxo:
-
-Pergunta: “Deseja registrar entrada, saída ou consultar saldo?”
+    Pergunta: “Deseja registrar entrada, saída ou consultar saldo?”
 
 Se entrada → solicitar dados da nota de compra.
 
-Se saída → vincular a pedido de venda.
+Se saída → vincular o pedido de venda.
 
 Se consulta → mostrar saldo atual.
 
@@ -82,25 +85,24 @@ Se consulta → mostrar saldo atual.
 
  **📁 4. Integrações e ações**
 
-O agente pode se conectar a dados corporativos (como bases de conhecimento, sistemas internos). É possível configurar ações personalizadas para buscar informações, realizar cálculos ou interagir com APIs externas.
+O agente pode se conectar a dados corporativos (como bases de conhecimento e sistemas internos). É possível configurar ações personalizadas para buscar informações, realizar cálculos ou interagir com APIs externas.
+O conector que utilizei foi o SharePoint para buscar em uma página específica criada como base de conhecimento a resolução do problema informado no ChatBot. E futuramente pretendo criar o inverso, os problemas resolvidos vão alimentar essa base de conhecimento.
 
 ***
 
  **📁 5. Testes e ajustes**
 
-O agente é testado diretamente no ambiente do Copilot Studio. Ajustes são feitos para melhorar a clareza das respostas e garantir que os fluxos funcionem corretamente.
+O agente é testado diretamente no ambiente do Copilot Studio. Ajustes são feitos para melhorar a clareza das respostas e garantir que os fluxos funcionem corretamente. Durante a criação foi realizado diversas alterações devido a vários fatores, o mais específico relacionado a licença de Admin para realizar as conecções necessárias no ambiente.
 
 ***
 
  **📁 6. Publicação e uso**
 
-Após os testes, o agente pode ser publicado e disponibilizado em diferentes canais (Teams, sites, aplicativos). É possível monitorar métricas de uso e treinar continuamente o agente para evoluir.
+Após os testes, o agente pode ser publicado e disponibilizado em diferentes canais (Teams, sites, aplicativos). É possível monitorar métricas de uso e treinar continuamente o agente para evoluir. Não realizei a publicação pois pretendo realizar mais algumas configurações e explorar certos conectores que ainda preciso estudar mais a fundo para ter um melhor aproveitamento.
 
 ***
 
-📊 No Copilot Studio, a criação e configuração de tópicos para um agente de suporte ERP segue uma lógica de conversas guiadas. Cada tópico funciona como uma “rota de atendimento” que organiza o diálogo e ajuda o agente a responder de forma estruturada. Vou detalhar como isso é feito:
-
 
  # 🎯Conclusão: 
- 
-Criar um agente no Copilot Studio significa definir propósito, construir tópicos de conversa, integrar dados e ações, testar e publicar. É um processo que combina design de diálogo com integração tecnológica para oferecer experiências inteligentes e personalizadas.
+ Realizei a criação de um ambiente de desemvolvimento para realizar o projeto proposto, assim não interferia em projetos já construidos no Copilot Studio na empresa que trabalho, usei uma conta corporativa para acesso ao ambiente. Assim conseguir criar um agente e trabalhar nele de forma espontânea e com liberdade. Conclui que para melhor desempenho de qualquer que seja o projeto sempre será necessário uma atualização, tanto de desenvolvimento quanto de script personalizados por mim, com isso será possível uma avaliação positiva dos colaboradores referente ao produto criado.
+
